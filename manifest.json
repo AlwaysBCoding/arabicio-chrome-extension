@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Arabic IO",
+  "description": "Open source Arabic NLP Toolkit",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "cookies",
+    "notifications",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["jquery-2.0.0.min.js", "background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-2.0.0.min.js", "scripts.js"],
+      "css": ["dropdown.css"]
+    }
+  ]
+}

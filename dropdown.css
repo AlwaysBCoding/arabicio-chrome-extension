@@ -1,0 +1,18 @@
+.arabicio-dropdown {
+	position: fixed;
+	top: 0px !important;
+	left: 0px !important;
+	width: 100% !important;
+	height: 80px !important;
+	background-color: #FFFFFF !important;
+	z-index: 9999 !important;
+	opacity: 0;
+}
+
+.arabicio-dropdown .arabicio-translation {
+	line-height: 80px !important;
+	text-align: center !important;
+	font-size: 32px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
